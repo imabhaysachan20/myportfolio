@@ -1,9 +1,12 @@
+import { FaHome, FaMobile, FaServicestack } from "react-icons/fa";
+
 export const reviews = [
   {
     quote:
       "Collaborating with Vijyapana was an absolute pleasure. Their professionalism, promptness, and dedication to delivering exceptional results were evident throughout the project. Vijyapana’s enthusiasm for every facet of development truly stands out. If you're looking to elevate your website and boost your brand, Vijyapana is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
+    
   },
   {
     quote:
@@ -44,17 +47,17 @@ export const testimonials = [
     {
       name: "Home",
       link: "/",
-      
+      icon:<FaHome className="h-4 w-4 text-neutral-500 dark:text-white"></FaHome>
     },
     {
       name: "Services",
       link: "#services",
-      
+      icon:<FaServicestack className="h-4 w-4 text-neutral-500 dark:text-white"></FaServicestack>
     },
     {
       name: "Contact",
       link: "#footer",
-      
+      icon:<FaMobile className= "h-4 w-4 text-neutral-500 dark:text-white"></FaMobile>
     },
   ]
 
