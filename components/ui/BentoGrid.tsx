@@ -51,8 +51,8 @@ export const BentoGridItem = ({
   spareImg?:string;
 }) => {
   const [copied, setCopied] = useState(false);
-  const leftLists = [<FaVideo></FaVideo>, <FaVideo></FaVideo>,<FaVideo></FaVideo>,<FaVideo></FaVideo>, <FaVideo></FaVideo>,<FaVideo></FaVideo>];
-  const rightLists = [<MdOutlineMonochromePhotos />, <MdOutlineMonochromePhotos />,<MdOutlineMonochromePhotos />,<MdOutlineMonochromePhotos />,<MdOutlineMonochromePhotos />];
+  const leftLists = [<FaVideo key={1}></FaVideo >, <FaVideo key={2}></FaVideo>,<FaVideo key={3}></FaVideo>,<FaVideo key={4}></FaVideo>, <FaVideo key={5}></FaVideo>,<FaVideo key={6}></FaVideo>];
+  const rightLists = [<MdOutlineMonochromePhotos key={1} />, <MdOutlineMonochromePhotos key={2}/>,<MdOutlineMonochromePhotos key={3}/>,<MdOutlineMonochromePhotos key={4} />,<MdOutlineMonochromePhotos key={5} />];
   
   const defaultOptions = {
     loop: copied,
