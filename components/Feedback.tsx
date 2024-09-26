@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, FormEvent } from 'react';
+import { useState } from 'react';
 import {FaHeadset} from "react-icons/fa"
 import {FaWindowClose} from "react-icons/fa"
 const FeedbackButton: React.FC = () => {
