@@ -13,9 +13,6 @@ const FeedbackButton: React.FC = () => {
     e.preventDefault(); // Prevent the default behavior
 
     // Create a FormData object from the form
-    const form = e.target;
-    console.log(form);
-    
 
     
       

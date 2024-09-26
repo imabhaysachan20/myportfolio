@@ -1,7 +1,7 @@
 
 import Clients from "@/components/Clients";
 import Feedback from "@/components/Feedback";
-import FeedbackForm from "@/components/FeedbackForm";
+
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Hiring from "@/components/Hiring";

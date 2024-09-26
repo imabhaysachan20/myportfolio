@@ -53,9 +53,7 @@ export const BentoGridItem = ({
   const [copied, setCopied] = useState(false);
   const leftLists = [<FaVideo key={1}></FaVideo >, <FaVideo key={2}></FaVideo>,<FaVideo key={3}></FaVideo>,<FaVideo key={4}></FaVideo>, <FaVideo key={5}></FaVideo>,<FaVideo key={6}></FaVideo>];
   const rightLists = [<MdOutlineMonochromePhotos key={1} />, <MdOutlineMonochromePhotos key={2}/>,<MdOutlineMonochromePhotos key={3}/>,<MdOutlineMonochromePhotos key={4} />,<MdOutlineMonochromePhotos key={5} />];
-  const redirect = ():void=>{
-    console.log("hey");
-  }
+  
   const defaultOptions = {
     loop: copied,
     autoplay: copied,

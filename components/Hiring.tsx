@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaMailBulk} from "react-icons/fa"
+
 const Hiring = () => {
   return (
     <div className="my-20 py-20 border border-opacity-20 hover:border-opacity-30 transition duration-150 border-white-100 rounded-lg">
