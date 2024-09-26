@@ -97,7 +97,7 @@ export const testimonials = [
       id: 4,
       title: "Voice Over",
       description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+      className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-start",
       img: "/grid.svg",
@@ -106,13 +106,23 @@ export const testimonials = [
   
     {
       id: 5,
-      title: "Social Media Creatives & Print Media",
+      title: "Social Media Creatives",
       description: "",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
       titleClassName: "justify-center md:justify-start lg:justify-center",
       img: "/b5.svg",
       spareImg: "/bg5.jpg",
+    },
+    {
+      id: 7,
+      title: "Print Media",
+      description: "",
+      className: "md:col-span-3 md:row-span-1",
+      imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
+      titleClassName: "justify-center md:justify-start lg:justify-center",
+      img: "/b5.svg",
+      spareImg: "/bg7.jpg",
     },
     {
       id: 6,
@@ -124,6 +134,7 @@ export const testimonials = [
       img: "",
       spareImg: "",
     },
+   
   ];
   
   export const projects = [

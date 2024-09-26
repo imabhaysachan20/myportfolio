@@ -1,5 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
+
 import { IoCopyOutline } from "react-icons/io5";
 import { FaVideo } from "react-icons/fa";
 import { BackgroundGradientAnimation } from "./BgGradient"
@@ -32,7 +33,6 @@ export const BentoGridItem = ({
   className,
   title,
   description,
- 
   id,
   img,
   imgClassName,
@@ -53,7 +53,9 @@ export const BentoGridItem = ({
   const [copied, setCopied] = useState(false);
   const leftLists = [<FaVideo key={1}></FaVideo >, <FaVideo key={2}></FaVideo>,<FaVideo key={3}></FaVideo>,<FaVideo key={4}></FaVideo>, <FaVideo key={5}></FaVideo>,<FaVideo key={6}></FaVideo>];
   const rightLists = [<MdOutlineMonochromePhotos key={1} />, <MdOutlineMonochromePhotos key={2}/>,<MdOutlineMonochromePhotos key={3}/>,<MdOutlineMonochromePhotos key={4} />,<MdOutlineMonochromePhotos key={5} />];
-  
+  const redirect = ():void=>{
+    console.log("hey");
+  }
   const defaultOptions = {
     loop: copied,
     autoplay: copied,
@@ -76,7 +78,7 @@ export const BentoGridItem = ({
     
     <div
       className={cn(
-        "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
+        "row-span-1 h-full relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
         className
       )} style={{ background: "rgb(4,7,29)",
         backgroundImage:
@@ -85,7 +87,7 @@ export const BentoGridItem = ({
     
        
     <div className={`${id === 6 && "flex justify-center"} h-full`}>
-        <div className="w-full h-full absolute">
+        <div  className="w-full h-full absolute">
           {img && (
             <img
               src={img}
@@ -128,7 +130,7 @@ export const BentoGridItem = ({
           {title}
         </div>
       
-        {id === 2 && <GridGlobe  />}
+        {id === 2 && <GridGlobe/>}
 
         {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
@@ -175,7 +177,7 @@ export const BentoGridItem = ({
               </div>
 
               <MagicButton
-                text={copied ? "Email is Copied!" : "Copy my email address"}
+                text={copied ? "Email is Copied!" : "Copy our email address"}
                 icon={<IoCopyOutline />}
                 position="left"
                 handleClick={handleCopy}

@@ -1,6 +1,10 @@
+
 import Clients from "@/components/Clients";
+import Feedback from "@/components/Feedback";
+import FeedbackForm from "@/components/FeedbackForm";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import Hiring from "@/components/Hiring";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import Grid from "@/components/ui/Grid";
@@ -13,8 +17,11 @@ export default function Home() {
       <FloatingNav navItems={navItems}/>
         <Hero/>  
         <Grid/>
+        <Hiring/>
         <RecentProjects/>
         <Clients/>
+        <Feedback/>
+        
         <Footer/>
       </div>
     </main>
