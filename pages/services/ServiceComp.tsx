@@ -26,13 +26,16 @@ const ServiceComp = ({object}:any) => {
   const pathLengthFourth = useTransform(scrollYProgress, [0, 0.8], [0.05, 1.2]);
   const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1.2]);
  
- 
+  {if (!object) {
+
+    return <p>Loading...</p>; // Or a placeholder component
+    }}
   return (
     <div className='w-full' >
-  
-   <Hero serviceName={object.heroSection.title} serviceDesc={object.heroSection.subtitle}/>
+    
+   <Hero serviceName={object?.heroSection?.title} serviceDesc={object?.heroSection?.subtitle}/>
 
-    <Work desc={object.whatWeOffer.features.map((obj:any)=>{return obj.feature}).join(", ")} projects={object.portfolio.projects}/>
+    <Work desc={object?.whatWeOffer?.features.map((obj:any)=>{return obj.feature}).join(", ")} projects={object?.portfolio?.projects}/>
   
 <section className='w-[100vw] overflow-hidden'>
   <Clients></Clients>
@@ -54,7 +57,7 @@ const ServiceComp = ({object}:any) => {
       />
     </div>
   </section>
-  <ChooseUs features={object.keyBenefits.benefits}/>
+  <ChooseUs features={object?.keyBenefits?.benefits}/>
 <section className='z-50'>
   <Footer></Footer>
 </section>
