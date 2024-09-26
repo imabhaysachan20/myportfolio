@@ -1,3 +1,5 @@
+"use client"
+
 import { useRouter } from 'next/router'
 import "../../app/globals.css"
 import { ThemeProvider } from '@/app/provider';

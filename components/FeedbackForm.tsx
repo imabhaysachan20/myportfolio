@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, FormEvent } from 'react';
+import { useState} from 'react';
 
 const FeedbackButton: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
