@@ -8,10 +8,8 @@ const FeedbackButton: React.FC = () => {
   const [name, setName] = useState<string>('');
   const [email, setEmail] = useState<string>('');
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // Handle form submission (e.g., send feedback to the backend)
-    alert(`Feedback submitted by ${name} (${email}): ${feedback}`);
+  const handleSubmit = () => {
+    
     setFeedback('');
     setName('');
     setEmail('');
