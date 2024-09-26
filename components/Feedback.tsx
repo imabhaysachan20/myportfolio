@@ -9,13 +9,10 @@ const FeedbackButton: React.FC = () => {
   const [name, setName] = useState<string>('');
   const [email, setEmail] = useState<string>('');
 
-  const handleSubmit = (e:any) => {
-    e.preventDefault(); // Prevent the default behavior
-
-    // Create a FormData object from the form
+  const handleSubmit = () => {
+  
 
     
-      
     
     setFeedback('');
     setName('');
