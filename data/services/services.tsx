@@ -339,10 +339,10 @@ export const WebDevData = {
       title: "What We Offer",
       description: "Our product photography services bring your brand's products to life, driving more engagement and sales.",
       features: [
-        { icon: "📸", feature: "Studio Photography" },
-        { icon: "📹", feature: "Product Videos" },
-        { icon: "✂️", feature: "Post-Production Editing" },
-        { icon: "🖼️", feature: "Lifestyle Photography" },
+        { icon: "📸", feature: "VideoShoot" },
+        { icon: "📹", feature: "Videography" },
+        { icon: "✂️", feature: "Photoshoot of Product" },
+        { icon: "🖼️", feature: "Graphic Designing" },
       ],
     },
   
@@ -493,9 +493,9 @@ export const WebDevData = {
       description: "From voice overs for commercials and e-learning to audio production for podcasts and advertisements, we offer a wide range of professional audio services.",
       features: [
         { icon: "🎤", feature: "Commercial Voice Overs" },
-        { icon: "🎧", feature: "Podcast Audio Production" },
-        { icon: "📚", feature: "E-learning & Narration" },
-        { icon: "🎼", feature: "Jingles & Audio Ads" },
+        { icon: "🎧", feature: "Songs Making" },
+        { icon: "📚", feature: "Audio Mixing" },
+        { icon: "🎼", feature: "Radio Ads" },
       ],
     },
   
@@ -647,10 +647,10 @@ export const WebDevData = {
       title: "What We Offer",
       description: "Our social media creatives are designed to capture attention and engage audiences, helping you grow your brand's online presence.",
       features: [
-        { icon: "📱", feature: "Custom Graphics for Social Platforms" },
-        { icon: "🎥", feature: "Video Content Creation" },
-        { icon: "🖼️", feature: "Carousel & Ad Design" },
-        { icon: "🎨", feature: "Creative Campaigns & Promotions" },
+        { icon: "📱", feature: "Reel Making" },
+        { icon: "🎥", feature: "Post Making" },
+        { icon: "🖼️", feature: "AD Making" },
+        { icon: "🎨", feature: "Campaign" },
       ],
     },
   
@@ -801,10 +801,12 @@ export const WebDevData = {
       title: "What We Offer",
       description: "Our print media services ensure that your brand is represented with quality and creativity in every print material we produce.",
       features: [
-        { icon: "🖼️", feature: "Brochure & Flyer Design" },
-        { icon: "📇", feature: "Business Cards" },
-        { icon: "📜", feature: "Posters & Banners" },
-        { icon: "📰", feature: "Magazine & Print Ads" },
+        { icon: "🖼️", feature: "Posters" },
+        { icon: "📇", feature: "Banners (Flex) " },
+        { icon: "📜", feature: "Boards (LCD,Digital) " },
+        { icon: "📰", feature: "Pamplets" },
+        { icon: "📰", feature: "Gift Hampers" },
+        { icon: "📰", feature: "ID cards" },
       ],
     },
   

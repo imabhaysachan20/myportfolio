@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import {FaHeadset} from "react-icons/fa"
 import {FaWindowClose} from "react-icons/fa"
+import { toast } from 'react-toastify';
 const FeedbackButton: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [feedback, setFeedback] = useState<string>('');
@@ -10,6 +11,28 @@ const FeedbackButton: React.FC = () => {
   const [email, setEmail] = useState<string>('');
 
   const handleSubmit = () => {
+    const obj:{Name:string,Email:string,Review:string} = {Name:name,Email:email,Review:feedback};
+    console.log(obj);
+    
+fetch('https://sheetdb.io/api/v1/8ld3akc1ibuxe', {
+    method: 'POST',
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        data: [
+                obj
+        ]
+    })
+})
+  .then((response) => response.json())
+  .then(() => {
+    toast.success("Feedback sent");
+  })
+  .catch((error)=>{
+    toast.error(error?.message);
+  });
     setFeedback('');
     setName('');
     setEmail('');

@@ -12,6 +12,8 @@ import Footer from '@/components/Footer';
 import ChooseUs from '@/components/ChooseUs';
 import Hero from "@/components/Services/Hero";
 import Work from "@/components/Services/Work";
+import { FloatingNav } from "@/components/ui/FloatingNav";
+import { navItems } from "@/data/landing";
 const ServiceComp = ({object}:any) => {
  
   const ref = React.useRef(null);
@@ -26,13 +28,13 @@ const ServiceComp = ({object}:any) => {
   const pathLengthFourth = useTransform(scrollYProgress, [0, 0.8], [0.05, 1.2]);
   const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1.2]);
  
-  {if (!object) {
+  {if (!object || !navItems) {
 
-    return <p>Loading...</p>; // Or a placeholder component
+    return <div className="flex items-center justify-center w-screen h-screen bg-black-100">Loading...</div>; // Or a placeholder component
     }}
   return (
     <div className='w-full' >
-    
+     <FloatingNav navItems={navItems}/>
    <Hero serviceName={object?.heroSection?.title} serviceDesc={object?.heroSection?.subtitle}/>
 
     <Work desc={object?.whatWeOffer?.features.map((obj:any)=>{return obj.feature}).join(", ")} projects={object?.portfolio?.projects}/>

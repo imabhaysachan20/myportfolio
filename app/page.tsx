@@ -1,7 +1,8 @@
 
 import Clients from "@/components/Clients";
 import Feedback from "@/components/Feedback";
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Hiring from "@/components/Hiring";
@@ -21,7 +22,7 @@ export default function Home() {
         <RecentProjects/>
         <Clients/>
         <Feedback/>
-        
+        <ToastContainer />
         <Footer/>
       </div>
     </main>

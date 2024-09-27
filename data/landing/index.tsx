@@ -2,36 +2,29 @@ import { FaHome, FaMobile, FaServicestack } from "react-icons/fa";
 
 export const reviews = [
   {
-    quote:
-      "Collaborating with Vijyapana was an absolute pleasure. Their professionalism, promptness, and dedication to delivering exceptional results were evident throughout the project. Vijyapana’s enthusiasm for every facet of development truly stands out. If you're looking to elevate your website and boost your brand, Vijyapana is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-    
+    profile:"/profile1.jpg",
+    quote: "Working with Vijyapana on our product shoot was an excellent experience. They captured the essence of our torches perfectly, highlighting every detail with stunning precision. The photos were crisp, professional, and truly elevated our brand presentation. Their team’s creativity and attention to detail were impressive, and they delivered beyond our expectations. We highly recommend Vijyapana for anyone seeking high-quality product photography.",
+    name: "Rachit Gupta",
+    title: "Co. Founder BlackMyth"
   },
   {
-    quote:
-      "Collaborating with Vijyapana was an absolute pleasure. Their professionalism, promptness, and dedication to delivering exceptional results were evident throughout the project. Vijyapana’s enthusiasm for every facet of development truly stands out. If you're looking to elevate your website and boost your brand, Vijyapana is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    profile:"/profile2.jpg",
+    quote: "The team at Vijyapana exceeded our expectations with their creative marketing campaigns and stunning print media designs. Their attention to detail and ability to capture our brand's essence made a significant impact on our visibility. We’ve seen tremendous growth in brand awareness thanks to their efforts.",
+    name: "Utkarsh Singh",
+    title: "Founder Vyom Clothing"
   },
   {
-    quote:
-      "Collaborating with Vijyapana was an absolute pleasure. Their professionalism, promptness, and dedication to delivering exceptional results were evident throughout the project. Vijyapana’s enthusiasm for every facet of development truly stands out. If you're looking to elevate your website and boost your brand, Vijyapana is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    profile:"/profile3.jpg",
+    quote: "Working with Vijyapana to create their website was a rewarding experience. We aimed to build a platform that reflects their brand’s dedication to quality and craftsmanship, and the result speaks for itself. The site is elegant, responsive, and makes it effortless for customers to explore their stunning services. It’s been a pleasure helping Vijyapana enhance their online presence, and we’re proud to have been part of their journey",
+    name: "Jannu Hans",
+    title: "Marketing Lead at J Furnitures"
   },
   {
-    quote:
-      "Collaborating with Vijyapana was an absolute pleasure. Their professionalism, promptness, and dedication to delivering exceptional results were evident throughout the project. Vijyapana’s enthusiasm for every facet of development truly stands out. If you're looking to elevate your website and boost your brand, Vijyapana is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Vijyapana was an absolute pleasure. Their professionalism, promptness, and dedication to delivering exceptional results were evident throughout the project. Vijyapana’s enthusiasm for every facet of development truly stands out. If you're looking to elevate your website and boost your brand, Vijyapana is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
+    profile:"/profile4.jpg",
+    quote: "Delivered exceptional audio mixing services for our latest project. The clarity and precision of the final mix truly brought our production to life. Their team was incredibly professional, attentive to every detail, and delivered on time. If you're looking for top-tier audio work that enhances your project, Vijyapana is the ideal partner. We couldn't be happier with the results.",
+    name: "Aayush Vishwakarma",
+    title: "Founder The Dream Company"
+  }
 ];
 
 export const testimonials = [
@@ -51,12 +44,12 @@ export const testimonials = [
     },
     {
       name: "Services",
-      link: "#services",
+      link: "/#services",
       icon:<FaServicestack className="h-4 w-4 text-neutral-500 dark:text-white"></FaServicestack>
     },
     {
       name: "Contact",
-      link: "#footer",
+      link: "/#footer",
       icon:<FaMobile className= "h-4 w-4 text-neutral-500 dark:text-white"></FaMobile>
     },
   ]
