@@ -55,75 +55,7 @@ export const WebDevData = {
           link: "https://editorially.org",
           thumbnail:
             "../../p4.svg",
-        },
-        {
-          title: "Editrix AI",
-          link: "https://editrix.ai",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Pixel Perfect",
-          link: "https://app.pixelperfect.quest",
-          thumbnail:
-            "../../p1.svg",
-        },
-       
-        {
-          title: "Algochurn",
-          link: "https://algochurn.com",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Aceternity UI",
-          link: "https://ui.aceternity.com",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Tailwind Master Kit",
-          link: "https://tailwindmasterkit.com",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "SmartBridge",
-          link: "https://smartbridgetech.com",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Renderwork Studio",
-          link: "https://renderwork.studio",
-          thumbnail:
-            "../../p1.svg",
-        },
-       
-        {
-          title: "Creme Digital",
-          link: "https://cremedigital.com",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Golden Bells Academy",
-          link: "https://goldenbellsacademy.com",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Invoker Labs",
-          link: "https://invoker.lol",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "E Free Invoice",
-          link: "https://efreeinvoice.com",
-          thumbnail:
-            "../../p1.svg",
-        },
+        }
       ]
     },
   
@@ -205,98 +137,37 @@ export const WebDevData = {
       title: "Our Work",
       projects: [
         {
-          title: "Moonbeam",
-          link: "https://gomoonbeam.com",
+          title: "Aptoid",
+          link: "https://aptoide.en.aptoide.com/app",
           thumbnail:
-            "../../p1.svg",
+          "/and2.jpg",
         },
         {
-          title: "Cursor",
-          link: "https://cursor.so",
+          title: "3D Wallpaper App",
+          link: "https://neon-3d.en.aptoide.com/app",
           thumbnail:
-            "../../p2.svg",
+            "/and1.jpg",
         },
         {
-          title: "Rogue",
-          link: "https://userogue.com",
+          title: "FitOlympia",
+          link: "https://play.google.com/store/apps/details?id=com.techbull.fitolympia&hl=en_IN",
           thumbnail:
-            "../../p3.svg",
+            "/and3.jpg",
         },
        
         {
-          title: "Editorially",
-          link: "https://editorially.org",
+          title: "PanaSonic Image",
+          link: "https://play.google.com/store/apps/details?id=com.panasonic.avc.cng.imageapp&hl=en_IN",
           thumbnail:
-            "../../p4.svg",
+            "/and4.png",
         },
         {
-          title: "Editrix AI",
-          link: "https://editrix.ai",
+          title: "SchoolERP",
+          link: "https://play.google.com/store/apps/details?id=com.vaibhavinfotech.schoolerp&hl=en_IN",
           thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Pixel Perfect",
-          link: "https://app.pixelperfect.quest",
-          thumbnail:
-            "../../p1.svg",
+            "/and5.png",
         },
        
-        {
-          title: "Algochurn",
-          link: "https://algochurn.com",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Aceternity UI",
-          link: "https://ui.aceternity.com",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Tailwind Master Kit",
-          link: "https://tailwindmasterkit.com",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "SmartBridge",
-          link: "https://smartbridgetech.com",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Renderwork Studio",
-          link: "https://renderwork.studio",
-          thumbnail:
-            "../../p1.svg",
-        },
-       
-        {
-          title: "Creme Digital",
-          link: "https://cremedigital.com",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Golden Bells Academy",
-          link: "https://goldenbellsacademy.com",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Invoker Labs",
-          link: "https://invoker.lol",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "E Free Invoice",
-          link: "https://efreeinvoice.com",
-          thumbnail:
-            "../../p1.svg",
-        },
       ],
     },
   
@@ -359,98 +230,67 @@ export const WebDevData = {
       title: "Our Work",
       projects: [
         {
-          title: "Moonbeam",
-          link: "https://gomoonbeam.com",
+          title: "MeBioMe",
+          link: "/ps1.png",
           thumbnail:
-            "../../p1.svg",
+            "/ps1.png",
         },
         {
-          title: "Cursor",
-          link: "https://cursor.so",
+          title: "MattePortless",
+          link: "/ps2.png",
           thumbnail:
-            "../../p2.svg",
+            "/ps2.png",
         },
         {
-          title: "Rogue",
-          link: "https://userogue.com",
+          title: "Cetaphil Underwater",
+          link: "/ps3.png",
           thumbnail:
-            "../../p3.svg",
+            "/ps3.png",
         },
        
         {
-          title: "Editorially",
+          title: "Suave",
           link: "https://editorially.org",
           thumbnail:
-            "../../p4.svg",
+            "/ps4.png",
         },
         {
           title: "Editrix AI",
           link: "https://editrix.ai",
           thumbnail:
-            "../../p1.svg",
+            "/ps5.png",
         },
         {
           title: "Pixel Perfect",
           link: "https://app.pixelperfect.quest",
           thumbnail:
-            "../../p1.svg",
+            "/ps6.png",
         },
        
         {
-          title: "Algochurn",
-          link: "https://algochurn.com",
+          title: "Dettol Product Shoot",
+          link: "/ps7.png",
           thumbnail:
-            "../../p1.svg",
+            "/ps7.png",
         },
         {
-          title: "Aceternity UI",
-          link: "https://ui.aceternity.com",
+          title: "Nexxus",
+          link: "/ps10.png",
           thumbnail:
-            "../../p1.svg",
+            "/ps10.png",
         },
         {
           title: "Tailwind Master Kit",
-          link: "https://tailwindmasterkit.com",
+          link: "/ps9.png",
           thumbnail:
-            "../../p1.svg",
+            "/ps9.png",
         },
         {
           title: "SmartBridge",
-          link: "https://smartbridgetech.com",
+          link: "/ps10.png",
           thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Renderwork Studio",
-          link: "https://renderwork.studio",
-          thumbnail:
-            "../../p1.svg",
-        },
-       
-        {
-          title: "Creme Digital",
-          link: "https://cremedigital.com",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Golden Bells Academy",
-          link: "https://goldenbellsacademy.com",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Invoker Labs",
-          link: "https://invoker.lol",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "E Free Invoice",
-          link: "https://efreeinvoice.com",
-          thumbnail:
-            "../../p1.svg",
-        },
+            "/ps10.png",
+        }
       ],
     },
   
@@ -667,98 +507,55 @@ export const WebDevData = {
       title: "Our Work",
       projects: [
         {
-          title: "Moonbeam",
-          link: "https://gomoonbeam.com",
+          title: "Ganesh Chaturthi",
+          link: "/smc4.png",
           thumbnail:
-            "../../p1.svg",
+            "/smc4.png",
         },
         {
-          title: "Cursor",
-          link: "https://cursor.so",
+          title: "Banner Design",
+          link: "/smc.png",
           thumbnail:
-            "../../p2.svg",
+            "/smc2.png",
         },
         {
-          title: "Rogue",
-          link: "https://userogue.com",
+          title: "RAQQS",
+          link: "/smc.jpg",
           thumbnail:
-            "../../p3.svg",
-        },
-       
-        {
-          title: "Editorially",
-          link: "https://editorially.org",
-          thumbnail:
-            "../../p4.svg",
+            "/smc3.jpg",
         },
         {
           title: "Editrix AI",
-          link: "https://editrix.ai",
+          link: "/smc7.png",
           thumbnail:
-            "../../p1.svg",
+            "/smc7.png",
+        },
+        ,
+        {
+          title: "Editrix AI",
+          link: "/smc10.png",
+          thumbnail:
+            "/smc10.png",
         },
         {
-          title: "Pixel Perfect",
-          link: "https://app.pixelperfect.quest",
+          title: "Editrix AI",
+          link: "/smc11.png",
           thumbnail:
-            "../../p1.svg",
+            "/smc11.png",
+        },
+        {
+          title: "Editrix AI",
+          link: "/smc1.png",
+          thumbnail:
+            "/smc13.png",
+        },
+        {
+          title: "Editrix AI",
+          link: "/smc14.png",
+          thumbnail:
+            "/smc14.png",
         },
        
-        {
-          title: "Algochurn",
-          link: "https://algochurn.com",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Aceternity UI",
-          link: "https://ui.aceternity.com",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Tailwind Master Kit",
-          link: "https://tailwindmasterkit.com",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "SmartBridge",
-          link: "https://smartbridgetech.com",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Renderwork Studio",
-          link: "https://renderwork.studio",
-          thumbnail:
-            "../../p1.svg",
-        },
-       
-        {
-          title: "Creme Digital",
-          link: "https://cremedigital.com",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Golden Bells Academy",
-          link: "https://goldenbellsacademy.com",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Invoker Labs",
-          link: "https://invoker.lol",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "E Free Invoice",
-          link: "https://efreeinvoice.com",
-          thumbnail:
-            "../../p1.svg",
-        },
       ],
     },
   
@@ -823,98 +620,56 @@ export const WebDevData = {
       title: "Our Work",
       projects: [
         {
-          title: "Moonbeam",
-          link: "https://gomoonbeam.com",
+          title: "FLEX ELECTRONICS",
+          link: "/pm2.jpg",
           thumbnail:
-            "../../p1.svg",
+          "/pm2.jpg",
         },
         {
-          title: "Cursor",
-          link: "https://cursor.so",
+          title: "FLEX",
+          link: "/pm1.png",
           thumbnail:
-            "../../p2.svg",
+            "/pm1.png",
         },
         {
-          title: "Rogue",
-          link: "https://userogue.com",
+          title: "Cosmetics",
+          link: "/pm3.png",
           thumbnail:
-            "../../p3.svg",
+            "/pm3.png",
         },
        
         {
-          title: "Editorially",
-          link: "https://editorially.org",
+          title: "Pamplet School",
+          link: "/pm4.png",
           thumbnail:
-            "../../p4.svg",
+            "/pm4.png",
         },
         {
-          title: "Editrix AI",
-          link: "https://editrix.ai",
+          title: "ID CARD",
+          link: "/pm5.png",
           thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Pixel Perfect",
-          link: "https://app.pixelperfect.quest",
-          thumbnail:
-            "../../p1.svg",
+            "/pm5.png",
         },
        
         {
-          title: "Algochurn",
-          link: "https://algochurn.com",
+          title: "ID CARD",
+          link: "/pm5.png",
           thumbnail:
-            "../../p1.svg",
+            "/pm5.png",
         },
         {
-          title: "Aceternity UI",
-          link: "https://ui.aceternity.com",
+          title: "Hamper Design",
+          link: "/pm6.png",
           thumbnail:
-            "../../p1.svg",
+            "/pm6.png",
         },
         {
-          title: "Tailwind Master Kit",
-          link: "https://tailwindmasterkit.com",
+          title: "ID CARD",
+          link: "/pm8.png",
           thumbnail:
-            "../../p1.svg",
+            "/pm8.png",
         },
-        {
-          title: "SmartBridge",
-          link: "https://smartbridgetech.com",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Renderwork Studio",
-          link: "https://renderwork.studio",
-          thumbnail:
-            "../../p1.svg",
-        },
-       
-        {
-          title: "Creme Digital",
-          link: "https://cremedigital.com",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Golden Bells Academy",
-          link: "https://goldenbellsacademy.com",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "Invoker Labs",
-          link: "https://invoker.lol",
-          thumbnail:
-            "../../p1.svg",
-        },
-        {
-          title: "E Free Invoice",
-          link: "https://efreeinvoice.com",
-          thumbnail:
-            "../../p1.svg",
-        },
+        
       ],
     },
   

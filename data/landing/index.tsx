@@ -234,6 +234,7 @@ export const testimonials = [
     {
       id: 1,
       img: "/instagram.svg",
+      link:"https://www.instagram.com/vijyapana"
     },
     {
       id: 2,
