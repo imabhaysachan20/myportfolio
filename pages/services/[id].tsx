@@ -17,7 +17,6 @@ const servicesMap: Record<string, ServiceData | undefined> = {
   "3": ProductShootData,
   "4": VoiceOverData,
   "7": PrintMediaData,
-  // @ts-ignore
   "5": SocialMediaCreativesData,
 };
 
