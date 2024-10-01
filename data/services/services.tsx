@@ -491,7 +491,7 @@ export const WebDevData = {
         { icon: "🎥", feature: "Post Making" },
         { icon: "🖼️", feature: "AD Making" },
         { icon: "🎨", feature: "Campaign" },
-      ],
+      ]
     },
   
     keyBenefits: {
@@ -554,9 +554,8 @@ export const WebDevData = {
           link: "/smc14.png",
           thumbnail:
             "/smc14.png",
-        },
-       
-      ],
+        }
+      ]
     },
   
     process: {

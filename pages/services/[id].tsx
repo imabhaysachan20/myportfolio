@@ -6,20 +6,19 @@ import {
   WebDevData,
   AndroidDevData,
   PrintMediaData,
-  ProductShootData,
-  SocialMediaCreativesData,
+  ProductShootData,SocialMediaCreativesData,
   VoiceOverData,
 } from '@/data/services/services';
 
 type ServiceData = typeof WebDevData; // Adjust this type based on your actual data structure
-
 const servicesMap: Record<string, ServiceData | undefined> = {
   "1": WebDevData,
   "2": AndroidDevData,
   "3": ProductShootData,
   "4": VoiceOverData,
-  "5": SocialMediaCreativesData,
   "7": PrintMediaData,
+  // @ts-ignore
+  "5": SocialMediaCreativesData,
 };
 
 const Service: React.FC = () => {
