@@ -530,7 +530,6 @@ export const WebDevData = {
           thumbnail:
             "/smc7.png",
         },
-        ,
         {
           title: "Editrix AI",
           link: "/smc10.png",
