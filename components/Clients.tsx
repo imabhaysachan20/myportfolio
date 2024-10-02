@@ -9,7 +9,8 @@ const Clients = async() => {
   
   const reviews =  apifetch.map((obj)=>{return obj.fields});
   reviews.forEach((obj)=>{
-    //@ts-expect-error
+    // @ts-expect-error: This function is intentionally not type-checked
+// because it relies on an external library that has mismatched types.
     obj.profile = obj?.profile?.fields?.file?.url
   });
   
