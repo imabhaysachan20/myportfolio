@@ -6,8 +6,13 @@ import { companies } from '@/data/landing'
 
 const Clients = async() => {
   const apifetch = await fetchReviews();
-  
-  const reviews =  apifetch.map((obj)=>{return obj.fields});
+  // @ts-expect-error: This function is intentionally not type-checked
+  const reviews:{
+    profile:string;
+    quote: string;
+    name: string;
+    title: string;
+  }[] =  apifetch.map((obj)=>{return obj.fields});
   reviews.forEach((obj)=>{
     // @ts-expect-error: This function is intentionally not type-checked
 // because it relies on an external library that has mismatched types.
@@ -21,7 +26,7 @@ const Clients = async() => {
          <span className='text-purple'>Satisfied Clients</span>
       </h1>
       <div className=" flex flex-col items-center mt-10">
-        
+
           <InfiniteMovingCards items={reviews} direction="right" speed='slow'></InfiniteMovingCards>
           <div className='flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg: mt-10'>
             {companies.map(({id,name,img,nameImg})=>{return <div key={id} className='flex md:max-w-60 max-w-32 gap-2'>
