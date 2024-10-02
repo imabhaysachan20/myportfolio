@@ -7,9 +7,9 @@ import { companies } from '@/data/landing'
 const Clients = async() => {
   const apifetch = await fetchReviews();
   
-  let reviews =  apifetch.map((obj)=>{return obj.fields});
+  const reviews =  apifetch.map((obj)=>{return obj.fields});
   reviews.forEach((obj)=>{
-    //@ts-ignore
+    //@ts-expect-error
     obj.profile = obj?.profile?.fields?.file?.url
   });
   
