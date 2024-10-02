@@ -1,8 +1,18 @@
 import React from 'react'
+import { fetchReviews } from '../lib/contentful'
+
 import { InfiniteMovingCards } from './ui/Reviews'
 import { companies, reviews } from '@/data/landing'
 
-const Clients = () => {
+const Clients = async() => {
+  const apifetch = await fetchReviews();
+  
+  let reviews =  apifetch.map((obj)=>{return obj.fields});
+  reviews.forEach((obj)=>{
+    //@ts-ignore
+    obj.profile = obj?.profile?.fields?.file?.url
+  });
+  
   return (
     <div className='py-20'>
       <h1 className='heading'>
