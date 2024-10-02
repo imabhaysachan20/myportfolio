@@ -24,7 +24,7 @@ const Hero = () => {
         direction="right"
         speed="slow"/>
         
-        <TextGenerateEffect className="text-center text-[40px] md:text-5xl lg:text-6xl" words="One Stop Solution"/>
+        <TextGenerateEffect className="text-center text-[40px] md:text-5xl lg:text-6xl" words="Vijay Pana"/>
         <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Creative Solutions for Digital Success</p>
         <a href="#services"><MagicButton icon={<BsRocketTakeoff />} position="right" otherClasses="tracking-widest uppercase" text="Explore Services"/></a>
         </div>

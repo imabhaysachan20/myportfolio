@@ -2,7 +2,7 @@ import React from 'react'
 import { fetchReviews } from '../lib/contentful'
 
 import { InfiniteMovingCards } from './ui/Reviews'
-import { companies, reviews } from '@/data/landing'
+import { companies } from '@/data/landing'
 
 const Clients = async() => {
   const apifetch = await fetchReviews();
@@ -20,7 +20,7 @@ const Clients = async() => {
          <span className='text-purple'>Satisfied Clients</span>
       </h1>
       <div className=" flex flex-col items-center mt-10">
-          
+        
           <InfiniteMovingCards items={reviews} direction="right" speed='slow'></InfiniteMovingCards>
           <div className='flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg: mt-10'>
             {companies.map(({id,name,img,nameImg})=>{return <div key={id} className='flex md:max-w-60 max-w-32 gap-2'>
