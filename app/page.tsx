@@ -1,7 +1,7 @@
 
 import Clients from "@/components/Clients";
 import Feedback from "@/components/Feedback";
-import { ToastContainer } from 'react-toastify';
+// import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
