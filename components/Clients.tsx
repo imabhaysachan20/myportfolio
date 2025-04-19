@@ -6,7 +6,7 @@ import { companies } from '@/data/landing'
 
 const Clients = async() => {
   // const apifetch = await fetchReviews();
-  // @ts-expect-error: This function is intentionally not type-checked
+  
   const reviews:{
     profile:string;
     quote: string;
