@@ -1,4 +1,4 @@
-"use client"
+
 import Clients from "@/components/Clients";
 import Feedback from "@/components/Feedback";
 import { ToastContainer } from 'react-toastify';

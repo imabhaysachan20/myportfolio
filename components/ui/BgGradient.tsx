@@ -34,73 +34,105 @@ export const BackgroundGradientAnimation = ({
   containerClassName?: string;
 }) => {
   const interactiveRef = useRef<HTMLDivElement>(null);
-
   const [curX, setCurX] = useState(0);
   const [curY, setCurY] = useState(0);
   const [tgX, setTgX] = useState(0);
   const [tgY, setTgY] = useState(0);
-  useEffect(() => {
-    document.body.style.setProperty(
-      "--gradient-background-start",
-      gradientBackgroundStart
-    );
-    document.body.style.setProperty(
-      "--gradient-background-end",
-      gradientBackgroundEnd
-    );
-    document.body.style.setProperty("--first-color", firstColor);
-    document.body.style.setProperty("--second-color", secondColor);
-    document.body.style.setProperty("--third-color", thirdColor);
-    document.body.style.setProperty("--fourth-color", fourthColor);
-    document.body.style.setProperty("--fifth-color", fifthColor);
-    document.body.style.setProperty("--pointer-color", pointerColor);
-    document.body.style.setProperty("--size", size);
-    document.body.style.setProperty("--blending-value", blendingValue);
-  }, []);
+  const [isSafari, setIsSafari] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
+  // Initialize component and set CSS variables
   useEffect(() => {
-    function move() {
-      if (!interactiveRef.current) {
-        return;
-      }
-      setCurX(curX + (tgX - curX) / 20);
-      setCurY(curY + (tgY - curY) / 20);
-      interactiveRef.current.style.transform = `translate(${Math.round(
-        curX
-      )}px, ${Math.round(curY)}px)`;
+    setIsMounted(true);
+    
+    if (typeof window !== 'undefined') {
+      document.body.style.setProperty("--gradient-background-start", gradientBackgroundStart);
+      document.body.style.setProperty("--gradient-background-end", gradientBackgroundEnd);
+      document.body.style.setProperty("--first-color", firstColor);
+      document.body.style.setProperty("--second-color", secondColor);
+      document.body.style.setProperty("--third-color", thirdColor);
+      document.body.style.setProperty("--fourth-color", fourthColor);
+      document.body.style.setProperty("--fifth-color", fifthColor);
+      document.body.style.setProperty("--pointer-color", pointerColor);
+      document.body.style.setProperty("--size", size);
+      document.body.style.setProperty("--blending-value", blendingValue);
+      setIsSafari(/^((?!chrome|android).)*safari/i.test(navigator.userAgent));
     }
 
-    move();
-  }, [tgX, tgY]);
+    return () => {
+      // Clean up CSS variables
+      document.body.style.removeProperty("--gradient-background-start");
+      document.body.style.removeProperty("--gradient-background-end");
+      document.body.style.removeProperty("--first-color");
+      document.body.style.removeProperty("--second-color");
+      document.body.style.removeProperty("--third-color");
+      document.body.style.removeProperty("--fourth-color");
+      document.body.style.removeProperty("--fifth-color");
+      document.body.style.removeProperty("--pointer-color");
+      document.body.style.removeProperty("--size");
+      document.body.style.removeProperty("--blending-value");
+    };
+  }, [
+    gradientBackgroundStart, gradientBackgroundEnd, 
+    firstColor, secondColor, thirdColor, 
+    fourthColor, fifthColor, pointerColor, 
+    size, blendingValue
+  ]);
+
+  // Animation frame logic
+  useEffect(() => {
+    if (!interactive || !interactiveRef.current || !isMounted) return;
+
+    let animationFrameId: number;
+    
+    const move = () => {
+      setCurX(curX + (tgX - curX) / 20);
+      setCurY(curY + (tgY - curY) / 20);
+      
+      if (interactiveRef.current) {
+        interactiveRef.current.style.transform = `translate(${Math.round(curX)}px, ${Math.round(curY)}px)`;
+      }
+      
+      animationFrameId = requestAnimationFrame(move);
+    };
+
+    animationFrameId = requestAnimationFrame(move);
+
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, [tgX, tgY, curX, curY, interactive, isMounted]);
 
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
-    if (interactiveRef.current) {
+    if (interactive && interactiveRef.current && isMounted) {
       const rect = interactiveRef.current.getBoundingClientRect();
       setTgX(event.clientX - rect.left);
       setTgY(event.clientY - rect.top);
     }
   };
 
-  const [isSafari, setIsSafari] = useState(false);
-  useEffect(() => {
-    setIsSafari(/^((?!chrome|android).)*safari/i.test(navigator.userAgent));
-  }, []);
+  if (!isMounted) {
+    return (
+      <div className={cn(
+        "h-full w-full absolute overflow-hidden top-0 left-0",
+        containerClassName
+      )}>
+        {children}
+      </div>
+    );
+  }
 
   return (
     <div
       className={cn(
-        "h-full w-full absolute  overflow-hidden top-0 left-0 bg-[linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end))]",
+        "h-full w-full absolute overflow-hidden top-0 left-0 bg-[linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end))]",
         containerClassName
       )}
     >
       <svg className="hidden">
         <defs>
           <filter id="blurMe">
-            <feGaussianBlur
-              in="SourceGraphic"
-              stdDeviation="10"
-              result="blur"
-            />
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
             <feColorMatrix
               in="blur"
               mode="matrix"
@@ -164,7 +196,7 @@ export const BackgroundGradientAnimation = ({
           )}
         ></div>
 
-        {interactive && (
+        {interactive && isMounted && (
           <div
             ref={interactiveRef}
             onMouseMove={handleMouseMove}
