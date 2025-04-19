@@ -1,5 +1,5 @@
 import React from 'react'
-import { fetchReviews } from '../lib/contentful'
+
 
 import { InfiniteMovingCards } from './ui/Reviews'
 import { companies } from '@/data/landing'

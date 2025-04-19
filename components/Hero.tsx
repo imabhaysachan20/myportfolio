@@ -25,7 +25,7 @@ const Hero = () => {
         speed="slow"/>
         
         <TextGenerateEffect className="text-center text-[40px] md:text-5xl lg:text-6xl" words="Transforming Concepts Into Seamless , User Experience"/>
-        <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Hi, I'm Abhay a Computer Science Student at IET LUCKNOW</p>
+        <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Hi, I&apos;m Abhay a Computer Science Student at IET LUCKNOW</p>
         <a href="#services"><MagicButton icon={<BsRocketTakeoff />} position="right" otherClasses="tracking-widest uppercase" text="Show My Profile"/></a>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { BentoGrid, BentoGridItem } from './BentoGrid'
 import { gridItems } from '@/data/landing'
-import Link from 'next/link'
+
 
 
 
