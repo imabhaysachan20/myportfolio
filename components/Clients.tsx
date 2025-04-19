@@ -5,20 +5,45 @@ import { InfiniteMovingCards } from './ui/Reviews'
 import { companies } from '@/data/landing'
 
 const Clients = async() => {
-  const apifetch = await fetchReviews();
+  // const apifetch = await fetchReviews();
   // @ts-expect-error: This function is intentionally not type-checked
   const reviews:{
     profile:string;
     quote: string;
     name: string;
     title: string;
-  }[] =  apifetch.map((obj)=>{return obj.fields});
-  reviews.forEach((obj)=>{
-    // @ts-expect-error: This function is intentionally not type-checked
-// because it relies on an external library that has mismatched types.
-    obj.profile = obj?.profile?.fields?.file?.url
-  });
-  
+  }[] =  [
+    {
+      profile: "https://randomuser.me/api/portraits/men/45.jpg",
+      quote: "This platform completely transformed the way we operate—it's fast, reliable, and user-friendly!",
+      name: "Ravi Sharma",
+      title: "Product Manager, TechNova",
+    },
+    {
+      profile: "https://randomuser.me/api/portraits/women/32.jpg",
+      quote: "I was amazed at how intuitive the interface is. Our team's productivity has doubled.",
+      name: "Anjali Verma",
+      title: "Lead Designer, Creatix Studio",
+    },
+    {
+      profile: "https://randomuser.me/api/portraits/men/12.jpg",
+      quote: "Fantastic support and seamless performance. Highly recommend to anyone serious about scaling.",
+      name: "Amit Desai",
+      title: "Founder, StartupBay",
+    },
+    {
+      profile: "https://randomuser.me/api/portraits/women/76.jpg",
+      quote: "Their attention to detail and customer service is unmatched. We're beyond satisfied.",
+      name: "Kavita Mehra",
+      title: "Marketing Head, BrightScope",
+    },
+    {
+      profile: "https://randomuser.me/api/portraits/men/63.jpg",
+      quote: "A game-changer for our business. Everything just works beautifully and effortlessly.",
+      name: "Rohit Kumar",
+      title: "CTO, PixelPeak Technologies",
+    }
+  ];
   return (
     <div className='py-20'>
       <h1 className='heading'>

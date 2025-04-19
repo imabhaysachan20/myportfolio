@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Vijyapana",
+  title: "Abhay Sachan",
   description: "One Stop Solution",
 };
 

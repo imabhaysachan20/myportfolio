@@ -1,4 +1,6 @@
+import Link from 'next/link'
 import React from 'react'
+import { FaFilePdf } from 'react-icons/fa'
 
 const Hiring = () => {
   return (
@@ -6,13 +8,13 @@ const Hiring = () => {
         <div className="flex flex-col justify-center items-center md:gap-x-8 gap-y-8  md:flex-row">
             <img src = "../hiring.svg" className='w-16 h-16' alt="" />
         <h1 className="heading">
-      We are{" "}
-      <span className="text-purple">Hiring!</span>
+      I am open to{" "}
+      <span className="text-purple">Work!</span>
     </h1>
         </div>
     <div className="flex flex-col md:flex-row  justify-center items-center gap-x-2 mt-8">
-    <p className='font-extralight tracking-wider'> Send you Resume/CV -</p>
-    <p className='cursor-pointer font-bold underline'><a href = "mailto:hiring@bijaypana.com">hiring@vijaypana.com</a></p> 
+    <p className='font-extralight tracking-wider'> View Resume -</p>
+    <Link href="/cv_f.pdf"><button className='border px-4 py-2 rounded-lg flex gap-2 items-center'><FaFilePdf/>Resume</button> </Link>
     </div>
     </div>
   )

@@ -28,12 +28,17 @@ export const reviews = [
 ];
 
 export const testimonials = [
-    {quote:"Website Devlopment",name:"",title:""},
-    {quote:"ProductShoot",name:"",title:""},
-    {quote:"APP DEVleopment",name:"",title:""},
-    {quote:"Social Media Creatives",name:"",title:""},
-    {quote:"Print Meadia",name:"",title:""},
-    {quote:"Voice Over",name:"",title:""},
+    {quote:"HTML",name:"",title:""},
+    {quote:"CSS",name:"",title:""},
+    {quote:"JAVASCRIPT",name:"",title:""},
+    {quote:"REACT",name:"",title:""},
+    {quote:"NEXTJS",name:"",title:""},
+    {quote:"MONGODB",name:"",title:""},
+    {quote:"POSTGRESQL",name:"",title:""},
+    {quote:"UI/UX",name:"",title:""},
+    {quote:"PRISMA",name:"",title:""},
+    {quote:"DOCKER",name:"",title:""},
+    {quote:"AWS",name:"",title:""},
   ];
 
   export const navItems = [
@@ -43,7 +48,7 @@ export const testimonials = [
       icon:<FaHome className="h-4 w-4 text-neutral-500 dark:text-white"></FaHome>
     },
     {
-      name: "Services",
+      name: "Profile",
       link: "/#services",
       icon:<FaServicestack className="h-4 w-4 text-neutral-500 dark:text-white"></FaServicestack>
     },
@@ -58,8 +63,8 @@ export const testimonials = [
   export const gridItems = [
     {
       id: 1,
-      title: "Website Development",
-      description: "High-quality",
+      title: "Web Developer",
+      description: "Full stack high-quality",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
@@ -68,8 +73,8 @@ export const testimonials = [
     },
     {
       id: 2,
-      title: "App Development",
-      description: "Android/IOS",
+      title: "Freelancer",
+      description: "Active",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-start",
@@ -78,8 +83,8 @@ export const testimonials = [
     },
     {
       id: 3,
-      title: "Product Shoot",
-      description: "Video And Photo",
+      title: "Tech Stack",
+      description: "I constantly try to improve my",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-center",
@@ -88,8 +93,8 @@ export const testimonials = [
     },
     {
       id: 4,
-      title: "Voice Over",
-      description: "",
+      title: "BTECH CSE",
+      description: "3rd year student at IET Lucknow pursuing",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-start",
@@ -99,8 +104,8 @@ export const testimonials = [
   
     {
       id: 5,
-      title: "Social Media Creatives",
-      description: "",
+      title: "Top Quality Output",
+      description: "I get the job done with",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
       titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -109,8 +114,8 @@ export const testimonials = [
     },
     {
       id: 7,
-      title: "Print Media",
-      description: "",
+      title: "TECH I KNOW",
+      description: "HTML CSS JS REACT NEXTJS TYPESCRIPT NODEJS EXPRESS MONGODB POSTGRES WEBSOCKETS TAILWIND CSS DOCKER AWS GCP AZURE AND MANY MORE... ",
       className: "md:col-span-3 md:row-span-1",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
       titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -133,35 +138,35 @@ export const testimonials = [
   export const projects = [
     {
       id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
+      title: "Full Stack Ecommerce Platform",
+      des: "A full stack end to end ecommerce platform with role based access",
+      img: "/p1.png",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://github.com/Vijaypanahajdin?tab=repositories",
+      link: "https://e-commerce-store-nextjs-typescript.vercel.app/",
     },
     {
       id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-      img: "/p2.svg",
+      title: "HeyCareer - Landing Page",
+      des: "Designed landing page of a career counselling website",
+      img: "/p2.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/Vijaypanahajdin/zoom-clone",
+      link: "https://heycareer.onrender.com/",
     },
     {
       id: 3,
-      title: "AI Image SaaS - Canva Application",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-      img: "/p3.svg",
+      title: "Vijyapana End To End",
+      des: "Made end to end website of advertising agency Vijyapana",
+      img: "/p3.png",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/Vijaypanahajdin/ai_saas_app",
+      link: "https://vijyapana.com",
     },
     {
       id: 4,
-      title: "Animated Apple Iphone 3D Website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: "/p4.svg",
+      title: "CRWORKS",
+      des: "Dedicated time table app",
+      img: "/p4.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://github.com/Vijaypanahajdin/iphone",
+      link: "https://imabhaysachan20.github.io/",
     },
   ];
   
@@ -234,14 +239,17 @@ export const testimonials = [
     {
       id: 1,
       img: "/instagram.svg",
-      link:"https://www.instagram.com/vijyapana"
+      link:"https://www.instagram.com/imabhaysachan"
     },
     {
       id: 2,
-      img: "/twit.svg",
+      img: "/git.svg",
+      link:"https://www.github.com/imabhaysachan"
     },
     {
       id: 3,
       img: "/link.svg",
+      link:"https://www.linkedin.com/in/abhay-sachan-629256269/"
+
     },
   ];
