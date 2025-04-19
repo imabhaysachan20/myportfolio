@@ -1,4 +1,4 @@
-"use client"
+
 import { FaHome, FaMobile, FaServicestack } from "react-icons/fa";
 
 export const reviews = [
