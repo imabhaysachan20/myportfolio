@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic'
 
 import Clients from "@/components/Clients";
 import Feedback from "@/components/Feedback";
@@ -8,7 +9,9 @@ import Hero from "@/components/Hero";
 import Hiring from "@/components/Hiring";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
-import Grid from "@/components/ui/Grid";
+const Grid = dynamic(() => import('@/components/ui/Grid'), {
+  ssr: false,
+})
 import { navItems } from "@/data/landing";
 
 export default function Home() {
